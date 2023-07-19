@@ -1,22 +1,28 @@
-import React, { Suspense, useEffect, useState } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
+import React, { Suspense, useEffect, useState, useRef } from 'react'
+import { Vector3 } from 'three'
+import { Canvas, useThree, useFrame } from '@react-three/fiber'
+import {
+  OrbitControls,
+  Preload,
+  useGLTF,
+  useDepthBuffer,
+  SpotLight
+} from '@react-three/drei'
 import CanvasLoader from '../Loader'
 function Computers({ isMobile }) {
   const computer = useGLTF('/desktop_pc/scene.gltf')
+  const depthBuffer = useDepthBuffer({ frames: 1 })
   return (
     <>
       <mesh>
         <hemisphereLight intensity={0.15} groundColor='black'></hemisphereLight>
         <pointLight intensity={1}></pointLight>
-        <spotLight
-          position={[-20, 50, 10]}
-          angle={0.12}
-          penumbra={1}
-          intensity={2}
-          castShadow
-          shadow-mapSize={1024}
-        ></spotLight>
+        <fog attach='fog' args={['#fff', 5, 20]} />
+        <MovingSpot
+          depthBuffer={depthBuffer}
+          color='#fff'
+          position={[3, 3, 2]}
+        />
         <primitive
           object={computer.scene}
           scale={isMobile ? 0.7 : 0.75}
@@ -27,6 +33,41 @@ function Computers({ isMobile }) {
     </>
   )
 }
+
+// @ts-ignore
+function MovingSpot({ vec = new Vector3(), ...props }) {
+  const light = useRef()
+  const viewport = useThree((state) => state.viewport)
+  useFrame((state) => {
+    // @ts-ignore
+    light.current.target.position.lerp(
+      vec.set(
+        (state.mouse.x * viewport.width) / 2,
+        (state.mouse.y * viewport.height) / 2,
+        0
+      ),
+      0.1
+    )
+    // @ts-ignore
+    light.current.target.updateMatrixWorld()
+  })
+  return (
+    <SpotLight
+      castShadow
+      // @ts-ignore
+      ref={light}
+      penumbra={1}
+      distance={6}
+      angle={0.35}
+      attenuation={5}
+      anglePower={4}
+      intensity={5}
+      shadow-mapSize={1024}
+      {...props}
+    />
+  )
+}
+
 //fov view of width
 // preserveDrawingBuffer properly render
 const ComputersCanvas = () => {
@@ -47,8 +88,9 @@ const ComputersCanvas = () => {
   }, [])
   return (
     <Canvas
-      frameloop='demand'
       shadows
+      dpr={[1, 2]}
+      frameloop='demand'
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
