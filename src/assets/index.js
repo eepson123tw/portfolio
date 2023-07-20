@@ -30,6 +30,9 @@ import carrent from './carrent.png'
 import jobit from './jobit.png'
 import tripguide from './tripguide.png'
 
+import vuejs from './vuejs.png'
+import jestjs from './jestjs.png'
+
 export {
   logo,
   backend,
@@ -58,5 +61,7 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide
+  tripguide,
+  vuejs,
+  jestjs
 }

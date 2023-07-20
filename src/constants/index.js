@@ -1,13 +1,11 @@
+// @ts-nocheck
 import {
-  mobile,
-  backend,
-  creator,
+  reactjs,
   web,
   javascript,
   typescript,
   html,
   css,
-  reactjs,
   redux,
   tailwind,
   nodejs,
@@ -22,7 +20,9 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs
+  threejs,
+  vuejs,
+  jestjs
 } from '../assets'
 
 export const navLinks = [
@@ -47,15 +47,15 @@ const services = [
   },
   {
     title: 'React Singer',
-    icon: mobile
+    icon: reactjs
   },
   {
     title: 'Vue Dreamer',
-    icon: backend
+    icon: vuejs
   },
   {
     title: 'Test Slayer',
-    icon: creator
+    icon: jestjs
   }
 ]
 
