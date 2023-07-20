@@ -6,23 +6,17 @@ import {
   typescript,
   html,
   css,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
   vuejs,
-  jestjs
+  jestjs,
+  firebase
 } from '../assets'
 
 export const navLinks = [
@@ -81,20 +75,20 @@ const technologies = [
     icon: reactjs
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux
+    name: 'Vue Js',
+    icon: vuejs
   },
   {
     name: 'Tailwind CSS',
     icon: tailwind
   },
   {
-    name: 'Node JS',
-    icon: nodejs
+    name: 'Jest',
+    icon: jestjs
   },
   {
-    name: 'MongoDB',
-    icon: mongodb
+    name: 'Firebase',
+    icon: firebase
   },
   {
     name: 'Three JS',

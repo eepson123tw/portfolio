@@ -32,7 +32,7 @@ import tripguide from './tripguide.png'
 
 import vuejs from './vuejs.png'
 import jestjs from './jestjs.png'
-
+import firebase from './tech/firebase.svg'
 export {
   logo,
   backend,
@@ -63,5 +63,6 @@ export {
   jobit,
   tripguide,
   vuejs,
-  jestjs
+  jestjs,
+  firebase
 }
