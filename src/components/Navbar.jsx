@@ -9,7 +9,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary `}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20  bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-z-500 to-90% shadow-lg shadow-zinc-100/20`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -22,7 +22,7 @@ export default function Navbar() {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            Allen &nbsp;<span className='sm:block hidden'> | Shih</span>
+            Allen &nbsp;<span className='sm:block hidden'> | &nbsp;Shih</span>
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -30,15 +30,15 @@ export default function Navbar() {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? 'text-red-400' : 'text-secondary'
+              } hover:text-red-300 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='sm:hidden flex flex-1 justify-end items-center cursor-pointer'>
           <img
             src={toggle ? close : menu}
             alt='menu'
@@ -55,8 +55,8 @@ export default function Navbar() {
                 <li
                   key={nav.id}
                   className={`${
-                    active === nav.title ? 'text-white' : 'text-secondary'
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                    active === nav.title ? 'text-red-400' : 'text-secondary'
+                  } font-poppins font-medium cursor-pointer text-[16px] hover:text-red-300`}
                   onClick={() => {
                     setActive(nav.title)
                     setToggle(!toggle)

@@ -64,4 +64,4 @@ function ExperienceCard({ iconBg, date, title, company_name, points, icon }) {
   )
 }
 
-export default SectionWrapper(Experience)
+export default SectionWrapper(Experience, '')
