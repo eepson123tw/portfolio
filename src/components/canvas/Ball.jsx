@@ -17,8 +17,8 @@ function Ball(props) {
   const [hasClick, setHasClick] = useState(false)
 
   useFrame((state, delta) => {
-    BallRef.current.rotation.y += delta * 0.01
-    BallRef.current.rotation.x = BallRef.current.rotation.y
+    BallRef.current.rotation.y = Math.PI * (Math.random() * 0.001)
+    BallRef.current.rotation.x = Math.PI * (Math.random() * 0.001)
   })
 
   return (
