@@ -3,7 +3,6 @@ import React from 'react'
 import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { services } from '../constants'
 import SectionWrapper from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motions'
@@ -85,4 +84,4 @@ function ProjectCard({
   )
 }
 
-export default SectionWrapper(Works, '')
+export default SectionWrapper(Works, 'work')
