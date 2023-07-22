@@ -86,22 +86,22 @@ const technologies = [
     name: 'Jest',
     icon: jestjs
   },
-  {
-    name: 'Firebase',
-    icon: firebase
-  },
+  // {
+  //   name: 'Firebase',
+  //   icon: firebase
+  // },
   {
     name: 'Three JS',
     icon: threejs
   },
-  {
-    name: 'git',
-    icon: git
-  },
-  {
-    name: 'figma',
-    icon: figma
-  },
+  // {
+  //   name: 'git',
+  //   icon: git
+  // },
+  // {
+  //   name: 'figma',
+  //   icon: figma
+  // },
   {
     name: 'docker',
     icon: docker
