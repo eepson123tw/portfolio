@@ -3,7 +3,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import { useTranslation } from 'react-i18next'
 export default function Hero() {
+  const { t, i18n } = useTranslation()
   return (
     <section className='relative w-full mx-auto h-screen'>
       <div
@@ -15,7 +17,7 @@ export default function Hero() {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className=' text-red-500'>Allen</span>
+            Hi, I'm <span className=' text-red-500'>{t('name')}</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop this portfolio and <br className='sm:block hidden' />

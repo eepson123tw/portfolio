@@ -12,6 +12,8 @@ import {
   StarsCanvas
 } from './components'
 
+import i18n from './i18n'
+
 const App = () => {
   return (
     <BrowserRouter>
