@@ -33,7 +33,13 @@ import tripguide from './tripguide.png'
 import vuejs from './vuejs.png'
 import jestjs from './jestjs.png'
 import firebase from './tech/firebase.svg'
+import pokemonCard from './pokemoncard.png'
+import blog from './blog.png'
+import phone from './phone.png'
+
 export {
+  pokemonCard,
+  blog,
   logo,
   backend,
   creator,
@@ -64,5 +70,6 @@ export {
   tripguide,
   vuejs,
   jestjs,
-  firebase
+  firebase,
+  phone
 }

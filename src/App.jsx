@@ -12,8 +12,6 @@ import {
   StarsCanvas
 } from './components'
 
-import i18n from './i18n'
-
 const App = () => {
   return (
     <BrowserRouter>
@@ -27,7 +25,7 @@ const App = () => {
         <Tech />
         <Works />
         <Feedbacks />
-        <div className='relative z-0'>
+        <div className='relative z-0 xl:h-auto md:h-[1600px]'>
           <Contact />
           <StarsCanvas />
         </div>

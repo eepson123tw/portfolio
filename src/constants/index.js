@@ -1,6 +1,7 @@
 // @ts-nocheck
 import {
   reactjs,
+  blog,
   web,
   javascript,
   typescript,
@@ -16,7 +17,8 @@ import {
   threejs,
   vuejs,
   jestjs,
-  firebase
+  phone,
+  pokemonCard
 } from '../assets'
 
 export const navLinks = [
@@ -116,18 +118,29 @@ const experiences = [
   {
     title: 'Vue.js Developer',
     company_name: 'Sheng Jin Integrated Services',
-    icon: 'https://www.sjis.com.tw/img/logo-sjis.png',
+    icon: 'https://www.sjis.com.tw/favicon.ico',
     iconBg: '#383E56',
     date: 'March 2021 - March 2022',
-    points: ['', '', '', '']
+    points: [
+      'Collaborated with team members, including PM, UX, FE, BE, QA, SA',
+      'Responsible for creating new features, integrating Restful API, modularizing UI components,',
+      'SEO optimization, algorithm sorting data and hierarchical data linkage',
+      'Construction Project and Data Structure Design'
+    ]
   },
   {
     title: 'Web Developer',
     company_name: 'Starlux Airlines',
-    icon: 'https://www.logo9.net/logoulchart/allimg/starlux-02.jpg',
+    icon: 'https://www.starlux-airlines.com/favicon.png',
     iconBg: '#E6DEDD',
     date: 'April 2022 - Current',
-    points: ['', '', '', '']
+    points: [
+      'Design Project Architecture and Page Routing Flow',
+      'Build Vue Framework Component Library and Implement Component Logic',
+      'Write Dockerfile and Set up CI/CD Processes',
+      'Performance Optimization and Ongoing Version Maintenance',
+      'Storybook Component Library Design and Collaboration with UI/UX'
+    ]
   }
 ]
 
@@ -160,16 +173,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Pokemon Card',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Build an Infinite Scrolling Pokémon Website Using React and Third-party APIs, and Recommend a Pokémon that Suits You Today, Providing an Entertaining Animation Display.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient'
       },
       {
-        name: 'mongodb',
+        name: 'zpix.css',
         color: 'green-text-gradient'
       },
       {
@@ -177,50 +190,126 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/'
+    image: pokemonCard,
+    source_code_link: 'https://github.com/eepson123tw/pokemon'
   },
   {
-    name: 'Job IT',
+    name: 'Blog',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Build A tech blog to record my dev life and write the new skill I have learned.covering a range of topics in frontend, backend, DevOps, and other areas of technology.',
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'restapi',
+        name: 'Vue3',
         color: 'green-text-gradient'
       },
       {
-        name: 'scss',
-        color: 'pink-text-gradient'
-      }
-    ],
-    image: jobit,
-    source_code_link: 'https://github.com/'
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'supabase',
+        name: 'Vite',
         color: 'green-text-gradient'
       },
       {
-        name: 'css',
+        name: 'VitePress',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'nginx',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'Docker',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'husky',
+        color: 'blue-text-gradient'
+      }
+    ],
+    image: blog,
+    source_code_link: 'https://github.com/eepson123tw/blog/tree/feature/husky'
+  },
+  {
+    name: 'Portfolio',
+    description:
+      'try to use Three.js and React three fiber to build a phone view Resume.',
+    tags: [
+      {
+        name: 'Three.js',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'React',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'React three fiber',
         color: 'pink-text-gradient'
       }
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/'
+    image: phone,
+    source_code_link: 'https://github.com/eepson123tw/ph-portfolio'
+  },
+  {
+    name: 'CompanyProject 1',
+    description: 'to be continue....',
+    tags: [
+      {
+        name: 'Vue2',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'bootstrap',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'lodash',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: '',
+    source_code_link: ''
+  },
+  {
+    name: 'CompanyProject 2',
+    description: 'to be continue....',
+    tags: [
+      {
+        name: 'Vue2',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'bootstrap',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'lodash',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: '',
+    source_code_link: ''
+  },
+  {
+    name: 'CompanyProject 2',
+    description: 'to be continue....',
+    tags: [
+      {
+        name: 'Vue2',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'bootstrap',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'lodash',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: '',
+    source_code_link: ''
   }
 ]
 
