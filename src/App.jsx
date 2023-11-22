@@ -24,7 +24,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        {false && <Feedbacks />}
         <div className='relative z-0 xl:h-auto md:h-[1600px]'>
           <Contact />
           <StarsCanvas />
