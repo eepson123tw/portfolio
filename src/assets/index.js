@@ -40,7 +40,7 @@ import phone from './phone.png'
 
 import gptAudio from './gpt-audio.png'
 import lastMile from './LastMile.png'
-import gptPrompts from './gptPrompts.png'
+import gptPrompts from './gpt-prompts.png'
 export {
   pokemonCard,
   blog,
