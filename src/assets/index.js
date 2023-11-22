@@ -1,3 +1,4 @@
+// @ts-nocheck
 import logo from './logo.png'
 import backend from './backend.png'
 import creator from './creator.png'
@@ -37,6 +38,9 @@ import pokemonCard from './pokemoncard.png'
 import blog from './blog.png'
 import phone from './phone.png'
 
+import gptAudio from './gpt-audio.png'
+import lastMile from './LastMile.png'
+import gptPrompts from './gptPrompts.png'
 export {
   pokemonCard,
   blog,
@@ -71,5 +75,8 @@ export {
   vuejs,
   jestjs,
   firebase,
-  phone
+  phone,
+  gptAudio,
+  lastMile,
+  gptPrompts
 }

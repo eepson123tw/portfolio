@@ -11,14 +11,14 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   vuejs,
   jestjs,
   phone,
-  pokemonCard
+  pokemonCard,
+  gptAudio,
+  gptPrompts,
+  lastMile
 } from '../assets'
 
 export const navLinks = [
@@ -173,25 +173,50 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Pokemon Card',
+    name: 'LastMile',
     description:
-      'Build an Infinite Scrolling Pokémon Website Using React and Third-party APIs, and Recommend a Pokémon that Suits You Today, Providing an Entertaining Animation Display.',
+      'This side project is designed to provide users with an easy way to find affordable airfare. It features a visual chart segment that analyzes the top three airlines in terms of current traffic and passenger volume, offering users a comprehensive understanding of the aviation sector. Additionally, it employs Three.js technology to create an engaging questionnaire section, enhancing the interactive and enjoyable aspects of the user experience.',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient'
       },
       {
-        name: 'zpix.css',
+        name: 'Three.js + React Three Fiber',
         color: 'green-text-gradient'
       },
       {
-        name: 'tailwind',
+        name: 'Vite',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'SSG',
         color: 'pink-text-gradient'
       }
     ],
-    image: pokemonCard,
-    source_code_link: 'https://github.com/eepson123tw/pokemon'
+    image: lastMile,
+    source_code_link: 'http://lastmile.ink/analyance/passenger'
+  },
+  {
+    name: 'GPT Audio',
+    description:
+      'This side project utilizes GPT Transition and Audio APIs to provide users with a key point extraction tool. It is capable of identifying timestamps in audio files and uses specific prompts to summarize and highlight each key point. This tool will be particularly valuable for users who need to extract essential information from extended recordings.',
+    tags: [
+      {
+        name: 'GPT Api',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'JS',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'CSS',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: gptAudio,
+    source_code_link: 'https://github.com/eepson123tw/GPT-Audio'
   },
   {
     name: 'Blog',
@@ -231,6 +256,28 @@ const projects = [
     source_code_link: 'https://github.com/eepson123tw/blog/tree/feature/husky'
   },
   {
+    name: 'Pokemon Card',
+    description:
+      'Build an Infinite Scrolling Pokémon Website Using React and Third-party APIs, and Recommend a Pokémon that Suits You Today, Providing an Entertaining Animation Display.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'zpix.css',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: pokemonCard,
+    source_code_link: 'https://github.com/eepson123tw/pokemon'
+  },
+
+  {
     name: 'Portfolio',
     description:
       'try to use Three.js and React three fiber to build a phone view Resume.',
@@ -252,64 +299,21 @@ const projects = [
     source_code_link: 'https://github.com/eepson123tw/ph-portfolio'
   },
   {
-    name: 'CompanyProject 1',
-    description: 'to be continue....',
+    name: 'GPT Prompts',
+    description:
+      'This repository is dedicated to efficiently creating, organizing, and sharing GPT prompts across categories like gaming, education, tool development, and creative work. It includes templates and guidelines for standardization, promoting collaboration. Suitable for all users, it aims to enhance productivity and inspire innovation.',
     tags: [
       {
-        name: 'Vue2',
+        name: 'markdown',
         color: 'blue-text-gradient'
       },
       {
-        name: 'bootstrap',
+        name: 'prompts',
         color: 'green-text-gradient'
-      },
-      {
-        name: 'lodash',
-        color: 'pink-text-gradient'
       }
     ],
-    image: '',
-    source_code_link: ''
-  },
-  {
-    name: 'CompanyProject 2',
-    description: 'to be continue....',
-    tags: [
-      {
-        name: 'Vue2',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'bootstrap',
-        color: 'green-text-gradient'
-      },
-      {
-        name: 'lodash',
-        color: 'pink-text-gradient'
-      }
-    ],
-    image: '',
-    source_code_link: ''
-  },
-  {
-    name: 'CompanyProject 2',
-    description: 'to be continue....',
-    tags: [
-      {
-        name: 'Vue2',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'bootstrap',
-        color: 'green-text-gradient'
-      },
-      {
-        name: 'lodash',
-        color: 'pink-text-gradient'
-      }
-    ],
-    image: '',
-    source_code_link: ''
+    image: gptPrompts,
+    source_code_link: 'https://github.com/eepson123tw/GPT-Prompts'
   }
 ]
 
