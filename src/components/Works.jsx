@@ -25,7 +25,7 @@ function Works() {
           challenging my limits and exploring different thought models.
         </motion.p>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20  flex flex-wrap gap-7  justify-center md:justify-start'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -44,10 +44,10 @@ function ProjectCard({
 }) {
   return (
     <>
-      <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+      <motion.div variants={fadeIn('up', 'spring', 0.5 * index, 0.75)}>
         <Tilt
           options={{ max: 45, scale: 1, speed: 450 }}
-          className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+          className='bg-tertiary p-5 rounded-2xl xs:w-[360px] w-full'
         >
           {image && (
             <div className='relative w-full h-[230px] '>
