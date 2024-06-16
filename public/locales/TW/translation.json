@@ -1,3 +1,73 @@
 {
-  "name": "周杰"
+  "nav": {
+    "about": "關於",
+    "work": "工作",
+    "contact": "聯絡",
+    "EN": "EN",
+    "TW": "中文"
+  },
+  "hero": {
+    "title": "嗨，我是",
+    "name": "施周杰",
+    "text": "我開發了這個作品集和",
+    "text2": "網頁應用，下方還有一些業餘的 SideProject。"
+  },
+  "intro": {
+    "title": "介紹",
+    "subtitle": "概覽。",
+    "text": "我是一位經驗豐富的前端工程師，熟悉使用 Vue 和 React 框架。我也對 TypeScript、Docker 和 Jenkins 有一定的了解。我具有強烈的主動性和學習渴望，能夠獨立構建項目並優化我編寫的代碼以提高性能等。我期待著參與開發令人印象深刻的服務，提供卓越的用戶體驗的機會。",
+    "icons": {
+      "web": "網頁開發者",
+      "react": "React 歌手",
+      "vue": "Vue 夢想家",
+      "test": "測試剋星"
+    }
+  },
+  "experience": {
+    "title": "我迄今為止的工作",
+    "subtitle": "工作經歷。",
+    "items": [
+      {
+        "title": "Vue 前端開發者",
+        "company_name": "昇晉整合服務",
+        "icon": "https://www.sjis.com.tw/favicon.ico",
+        "iconBg": "#383E56",
+        "date": "2021年3月 - 2022年3月",
+        "points": [
+          "與團隊成員合作，包括產品經理、用戶體驗設計師、前端工程師、後端工程師、品質保證及系統架構師",
+          "負責創建新功能、整合 Restful API、模塊化 UI 組件",
+          "SEO 優化、數據排序算法和層次數據聯動",
+          "建構項目和數據結構設計"
+        ]
+      },
+      {
+        "title": "Vue 前端開發者",
+        "company_name": "星宇航空",
+        "icon": "https://www.starlux-airlines.com/favicon.png",
+        "iconBg": "#E6DEDD",
+        "date": "2022年4月 - 2024年4月",
+        "points": [
+          "設計項目架構和頁面路由流程",
+          "建立 Vue 框架組件庫並實施組件邏輯",
+          "編寫 Dockerfile 並設置 CI/CD 流程",
+          "性能優化和持續版本維護",
+          "Storybook 組件庫設計與 UI/UX 合作"
+        ]
+      },
+      {
+        "title": "React 前端開發者",
+        "company_name": "Ionex Energy",
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfgnmHmY_0bC3chh0tts4JE9XJHQjn_hvj6Q&s",
+        "iconBg": "#383E56",
+        "date": "2024年3月 - 2024年7月",
+        "points": [
+          "GraphQL API 整合與數據獲取",
+          "TypeScript 與 React Hook 開發",
+          "建立 React 框架組件庫並實施組件邏輯",
+          "性能優化和持續版本維護",
+          "可視化視覺圖表設計與地圖呈現"
+        ]
+      }
+    ]
+  }
 }

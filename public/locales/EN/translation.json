@@ -1,3 +1,73 @@
 {
-  "name": "Allen"
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact",
+    "EN": "EN",
+    "TW": "中文"
+  },
+  "hero": {
+    "title": "Hi, I'm",
+    "name": "Aaron Chou",
+    "text": "I develop this portfolio and",
+    "text2": "web applications."
+  },
+  "intro": {
+    "title": "Intro",
+    "subtitle": "OverView.",
+    "text": "I am an experienced front-end engineer proficient in using Vue and React frameworks. I also have some knowledge of TypeScript, Docker, and Jenkins. I possess strong initiative and a thirst for learning, enabling me to independently construct projects and optimize the code I write to enhance performance and more. I look forward to the opportunity to participate in developing impressive services that deliver exceptional user experiences.",
+    "icons": {
+      "web": "Web Developer",
+      "react": "React Singer",
+      "vue": "Vue Dreamer",
+      "test": "Test Slayer"
+    }
+  },
+  "experience": {
+    "title": "WHAT I HAVE DONE SO FAR",
+    "subtitle": "Work Experience.",
+    "items": [
+      {
+        "title": "Vue.js Developer",
+        "company_name": "Sheng Jin Integrated Services",
+        "icon": "https://www.sjis.com.tw/favicon.ico",
+        "iconBg": "#383E56",
+        "date": "March 2021 - March 2022",
+        "points": [
+          "Collaborated with team members, including PM, UX, FE, BE, QA, SA",
+          "Responsible for creating new features, integrating Restful API, modularizing UI components,",
+          "SEO optimization, algorithm sorting data and hierarchical data linkage",
+          "Construction Project and Data Structure Design"
+        ]
+      },
+      {
+        "title": "Web Developer",
+        "company_name": "Starlux Airlines",
+        "icon": "https://www.starlux-airlines.com/favicon.png",
+        "iconBg": "#E6DEDD",
+        "date": "April 2022 - April 2024",
+        "points": [
+          "Design Project Architecture and Page Routing Flow",
+          "Build Vue Framework Component Library and Implement Component Logic",
+          "Write Dockerfile and Set up CI/CD Processes",
+          "Performance Optimization and Ongoing Version Maintenance",
+          "Storybook Component Library Design and Collaboration with UI/UX"
+        ]
+      },
+      {
+        "title": "Front End Developer",
+        "company_name": "Ionex_Energy",
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfgnmHmY_0bC3chh0tts4JE9XJHQjn_hvj6Q&s",
+        "iconBg": "#383E56",
+        "date": "March 2024 - July 2024",
+        "points": [
+          "GraphQL API Integration and Data Fetching",
+          "TypeScript and React Hook Development",
+          "Build React Framework Component Library and Implement Component Logic",
+          "Performance Optimization and Ongoing Version Maintenance",
+          "Visual Chart Design and Data Analysis"
+        ]
+      }
+    ]
+  }
 }
