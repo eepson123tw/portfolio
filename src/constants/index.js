@@ -19,6 +19,7 @@ import {
   gptAudio,
   gptPrompts,
   lastMile,
+  ojosama,
 } from "../assets";
 
 export const navLinks = [
@@ -210,6 +211,31 @@ const projects = [
     ],
     image: lastMile,
     source_code_link: "http://lastmile.ink/analyance/passenger",
+  },
+  {
+    name: "GoodNightOjoSama",
+    description:
+      "A Chatbot base on the meme,When you pass the keyborad, if will play the music and ask the gpt chatbot which has the role of deacon, and he will answer you with the meme.",
+    tags: [
+      {
+        name: "React + Remix",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GPT-4",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node+Express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Socket.io",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ojosama,
+    source_code_link: "https://good-night-ojosama.zeabur.app/",
   },
   {
     name: "GPT Audio",
