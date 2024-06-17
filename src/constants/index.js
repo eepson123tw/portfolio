@@ -293,7 +293,7 @@ const projects = [
       },
     ],
     image: blog,
-    source_code_link: "https://github.com/eepson123tw/blog/tree/feature/husky",
+    source_code_link: "https://www.aaron-shih.com/",
   },
   {
     name: "Pokemon Card",
