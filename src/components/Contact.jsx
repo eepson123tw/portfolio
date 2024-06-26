@@ -35,7 +35,7 @@ function Contact() {
         "template_pysktmn",
         {
           from_name: form.name,
-          to_name: "Allen Chou",
+          to_name: "Allen Shih",
           from_email: form.email,
           to_email: "ninocar215@gmail.com",
           message: form.message,
